@@ -1,45 +1,33 @@
 {
-    "compilerOptions": {
-        "target": "es2018",
-        "outDir": "build",
-        "rootDir": "src",
-        "moduleResolution": "node",
-        "module": "commonjs",
-        "jsx": "react",
-        "declaration": true,
-        "declarationMap": true,
-        "sourceMap": true,
-        "esModuleInterop": true ,
-        "noUnusedLocals": true ,
-        "noUnusedParameters": true,
-        "noImplicitReturns": true ,
-        "noFallthroughCasesInSwitch": true ,
-        "allowSyntheticDefaultImports": true,
-        "traceResolution": false ,
-        "listEmittedFiles": false ,
-        "forceConsistentCasingInFileNames": true,
-        "listFiles": false ,
-        "baseUrl": "./",
-        "skipLibCheck": true,
-        "pretty": true ,
-        "strict": true,
-        "lib": [
-            "es2018",
-            "DOM"
-        ],
+  "compilerOptions": {
+    "target": "es2018",
+    "outDir": "build",
+    "rootDir": "src",
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "jsx": "react",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "traceResolution": false,
+    "listEmittedFiles": false,
+    "forceConsistentCasingInFileNames": true,
+    "listFiles": false,
+    "baseUrl": "./",
+    "skipLibCheck": true,
+    "pretty": true,
+    "strict": true,
+    "lib": ["es2018", "DOM"],
 
-        "types": [
-          "jest",
-          "node"
-        ],
-        "typeRoots": [
-          "./node_modules/@types"
-        ]
-
-    },
-    "exclude": [
-        "build",
-        // "tests"
-    ],
-    "compileOnSave": false
+    "types": ["jest", "node"],
+    "typeRoots": ["./node_modules/@types"]
+  },
+  "exclude": ["build", "tests"],
+  "compileOnSave": false
 }
