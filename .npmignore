@@ -1,0 +1,12 @@
+node_modules
+src
+package
+tests
+example
+tsconfig.json
+tslint.json
+.github
+.gitignore
+.editorconfig
+*.tgz
+/*.js
