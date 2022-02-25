@@ -1,6 +1,6 @@
 {
   "name": "@buildany/theme-codeblock-source",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A docusaurus plugin that displays title with URL link to the external source code file.",
   "keywords": [
     "theme-codeblock-source",
