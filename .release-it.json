@@ -1,8 +1,35 @@
 {
-  "git": {
-    "commitMessage": "chore: release v${version}"
+  "hooks": {
+    "after:init": ["npm run lint", "npm test", "npm run build"]
   },
-  "github": {
-    "release": true
+
+  "git": {
+    "changelog": "git log --pretty=format:\"* %s (%h)\" ${from}...${to}",
+    "requireCleanWorkingDir": false,
+    "requireBranch": false,
+    "requireUpstream": true,
+    "requireCommits": false,
+    "addUntrackedFiles": false,
+    "commit": true,
+    "commitMessage": "Release ${version}",
+    "commitArgs": [],
+    "tag": true,
+    "tagName": null,
+    "tagMatch": null,
+    "tagAnnotation": "Release ${version}",
+    "tagArgs": [],
+    "push": true,
+    "pushArgs": ["--follow-tags"],
+    "pushRepo": ""
+  },
+  "npm": {
+    "publish": true,
+    "publishPath": ".",
+    "publishArgs": [],
+    "tag": null,
+    "otp": null,
+    "ignoreVersion": false,
+    "skipChecks": false,
+    "timeout": 10
   }
 }
