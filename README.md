@@ -41,16 +41,18 @@ In your `*.md` file add `sourceUrl` to the language meta string with link to the
 In addition, you could also customize your link style by providing a custom link class name via `sourceClassName` metadata property:
 
 
-  ```js title=src/utils/docsUtils.tsx sourceUrl=https://github.com/facebook/docusaurus/blob/main/packages/docusaurus-theme-common/src/utils/docsUtils.tsx#L35 sourceClassName=source-link
-    ...
+    ```js title=src/utils/docsUtils.tsx sourceUrl=https://github.com/facebook/docusaurus/blob/main/packages/docusaurus-theme-common/src/utils/docsUtils.tsx#L35  sourceClassName=source-link
+      ...
 
-    return (
-      <DocsVersionContext.Provider value={version}>
-        {children}
-      </DocsVersionContext.Provider>
-    );
-    ...
-  ```
+      return (
+        <DocsVersionContext.Provider value={version}>
+          {children}
+        </DocsVersionContext.Provider>
+      );
+      ...
+    ```
+
+
 
 
 Check out [example](./example/blog/2022-02-23-code-block-example.md) docusaurus project.
