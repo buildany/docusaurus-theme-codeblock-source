@@ -9,7 +9,7 @@ tags: [codeblock, example]
 This is an example of how to use code block with the source code link example:
 
 
-```js title=docusaurus-theme-common/src/utils/docsUtils.tsx sourceUrl=https://github.com/facebook/docusaurus/blob/main/packages/docusaurus-theme-common/src/utils/docsUtils.tsx sourceClassName=source-link
+```js title=docusaurus-theme-common/src/utils/docsUtils.tsx sourceUrl=https://github.com/facebook/docusaurus/blob/main/packages/docusaurus-theme-common/src/utils/docsUtils.tsx
 export function DocsVersionProvider({
   children,
   version,

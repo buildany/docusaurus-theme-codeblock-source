@@ -38,7 +38,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.source-link {
+.source-code-link {
   text-decoration: underline;
   color: var(--ifm-color-primary-light);
 }

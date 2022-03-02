@@ -1,6 +1,6 @@
 {
   "name": "@buildany/theme-codeblock-source",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A docusaurus plugin that displays title with URL link to the external source code file.",
   "keywords": [
     "theme-codeblock-source",
@@ -24,9 +24,11 @@
   },
   "dependencies": {
     "@docusaurus/types": "^2.0.0-beta.15",
+    "classnames": "^2.3.1",
     "ts-jest": "^27.1.3"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
     "@types/jest": "^27.4.1",
     "@types/react": "^17.0.39",

@@ -1,10 +1,11 @@
 import React from "react";
-import CodeBlock from "@theme-init/CodeBlock";
+import DocusaurusCodeBlock from "../DocusaurusCodeBlock";
 import { validUrl } from "../../utils";
+import cx from "classnames";
 
 import type { CodeBlockProps } from "../types";
 
-const CodeBlockSource = ({
+const CodeBlock = ({
   title,
   sourceUrl,
   sourceClassName,
@@ -12,14 +13,19 @@ const CodeBlockSource = ({
 }: CodeBlockProps) => {
   const url = validUrl(sourceUrl);
   const codeBlockTitle = url ? (
-    <a href={url} target="_blank" className={sourceClassName}>
+    <a
+      data-testid="sourceCodeLink"
+      href={url}
+      target="_blank"
+      className={cx("source-code-link", sourceClassName)}
+    >
       {!!title ? title : url}
     </a>
   ) : (
     title
   );
 
-  return <CodeBlock {...props} title={codeBlockTitle} />;
+  return <DocusaurusCodeBlock {...props} title={codeBlockTitle} />;
 };
 
-export default CodeBlockSource;
+export default CodeBlock;

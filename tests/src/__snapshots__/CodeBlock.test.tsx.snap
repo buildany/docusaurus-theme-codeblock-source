@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render code block correctly with source code link 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="docusaurusCodeBlock"
+  >
+    <div
+      data-testid="title"
+    >
+      <a
+        class="source-code-link"
+        data-testid="sourceCodeLink"
+        href="https://example.code.org/file.js"
+        target="_blank"
+      >
+        Code block title
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`should render code block correctly with source code link and custom class name 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="docusaurusCodeBlock"
+  >
+    <div
+      data-testid="title"
+    >
+      <a
+        class="source-code-link source-link-custom-class"
+        data-testid="sourceCodeLink"
+        href="https://example.code.org/file.js"
+        target="_blank"
+      >
+        Code block title
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`should render code block correctly with source code link if title is not specified 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="docusaurusCodeBlock"
+  >
+    <div
+      data-testid="title"
+    >
+      <a
+        class="source-code-link"
+        data-testid="sourceCodeLink"
+        href="https://example.code.org/file.js"
+        target="_blank"
+      >
+        https://example.code.org/file.js
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`should render code block correctly without source code link 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="docusaurusCodeBlock"
+  >
+    <div
+      data-testid="title"
+    >
+      Code block title
+    </div>
+  </div>
+</DocumentFragment>
+`;
